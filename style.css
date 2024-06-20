@@ -21,15 +21,14 @@ body {
     height: 297mm;
     grid-template-columns: 5% 35% 60%;
     grid-template-rows: 10% 15% 75%;
-    background-color: #2196F3;
+    /* background-color: #2196F3; */
 }
 
 .grid-item {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     /* border: 2px solid rgba(0, 0, 0); */
-    padding: 20px;
     font-size: 30px;
     text-align: center;
     color: black;
@@ -47,7 +46,7 @@ body {
 }
 
 .grid-item-b {
-    background-color: black;
+    background-color: #181818;
     color: white;
 
     grid-column-start: 2;
@@ -68,7 +67,7 @@ body {
 }
 
 .grid-item-d {
-    background-color: rgb(17, 81, 153);
+    background-color: #043280;
 
     grid-column-start: 1;
     grid-column-end: 2;
@@ -78,17 +77,33 @@ body {
 }
 
 .grid-item-e {
-    background-color: rgb(17, 81, 153);
+    background-color: #043280;
 
     grid-column-start: 2;
     grid-column-end: 3;
 
     grid-row-start: 2;
     grid-row-end: 3;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+    .avatarContainer {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+
+        overflow:hidden;
+    }
+    .avatarContainer img{
+        width:100%;
+    }
+
 
 .grid-item-f {
-    background-color: rgb(17, 81, 153);
+    background-color: #043280;
+    padding: 20px;
 
     grid-column-start: 3;
     grid-column-end: 4;
@@ -96,6 +111,26 @@ body {
     grid-row-start: 2;
     grid-row-end: 3;
 }
+
+    .name {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        color: white;
+
+        text-transform: uppercase;
+        letter-spacing: 5px;
+
+        gap: 5%;
+        font-size: 1.8em;
+    }
+
+        .lastName{
+            margin-left: 5%;
+        }
+
 
 .grid-item-g {
     background-color: white;
@@ -108,7 +143,7 @@ body {
 }
 
 .grid-item-h {
-    background-color: black;
+    background-color: #181818;
     color: white;
 
     grid-column-start: 2;
@@ -116,6 +151,8 @@ body {
 
     grid-row-start: 3;
     grid-row-end: 4;
+
+    padding-top: 20%;
 }
 
 .grid-item-i {
