@@ -1,20 +1,129 @@
-html {
+html,
+body {
     font-family: Arial, Helvetica, sans-serif;
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@page {
+    size: A4;
+    margin: 0;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(7, 20px [col-start]);
+    width: 210mm;
+    height: 297mm;
+    grid-template-columns: 5% 35% 60%;
+    grid-template-rows: 10% 15% 75%;
     background-color: #2196F3;
-    padding: 10px;
-
 }
 
 .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid rgba(0, 0, 0); */
     padding: 20px;
     font-size: 30px;
     text-align: center;
+    color: black;
+    font-weight: bold;
 }
 
+.grid-item-a {
+    background-color: white;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-item-b {
+    background-color: black;
+    color: white;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-item-c {
+    background-color: white;
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-item-d {
+    background-color: rgb(17, 81, 153);
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.grid-item-e {
+    background-color: rgb(17, 81, 153);
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.grid-item-f {
+    background-color: rgb(17, 81, 153);
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.grid-item-g {
+    background-color: white;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.grid-item-h {
+    background-color: black;
+    color: white;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.grid-item-i {
+    background-color: white;
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
