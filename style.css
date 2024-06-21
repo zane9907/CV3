@@ -1,6 +1,6 @@
 html,
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 210mm;
     height: 297mm;
     margin: 0;
@@ -21,18 +21,11 @@ body {
     height: 297mm;
     grid-template-columns: 5% 35% 60%;
     grid-template-rows: 10% 15% 75%;
-    /* background-color: #2196F3; */
 }
 
 .grid-item {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* border: 2px solid rgba(0, 0, 0); */
-    font-size: 30px;
     text-align: center;
     color: black;
-    font-weight: bold;
 }
 
 .grid-item-a {
@@ -93,6 +86,7 @@ body {
         width: 250px;
         height: 250px;
         border-radius: 50%;
+        border: 5px solid #043280;
 
         overflow:hidden;
     }
@@ -121,14 +115,15 @@ body {
         color: white;
 
         text-transform: uppercase;
-        letter-spacing: 5px;
+        font-weight: bold;
+        /* letter-spacing: 5px; */
 
         gap: 5%;
-        font-size: 1.8em;
+        font-size: 3.5em;
     }
 
         .lastName{
-            margin-left: 5%;
+            margin-left: 10%;
         }
 
 
@@ -152,8 +147,128 @@ body {
     grid-row-start: 3;
     grid-row-end: 4;
 
-    padding-top: 20%;
+    padding-top: 25%;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
+
+    .about-title{
+        letter-spacing: 2px;
+        font-size: 2.8em;
+        margin-bottom: 5%;
+    }
+
+    .about-short{
+        padding: 0 10%;;
+        font-size: 1em;
+        font-weight: 300;
+    }
+
+    .about-contact{
+        margin-top: 6%;
+        width: 100%;
+        font-weight: 300;
+        font-size: 1em;
+    }
+
+        .about-contact-list{
+            text-decoration: none;
+            margin: 0 10%;
+        }
+
+            .about-contact-item{
+                display: flex;
+                align-items: center;
+
+                margin-top: 6%;
+            }
+
+            .about-contact-item > i{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                margin-right: 7%;
+                
+
+                color: black;
+
+                font-size: 1em;
+                border-radius: 50%;
+                min-width: 30px;
+                min-height: 30px;
+                background-color: #0975be;
+            }
+
+            .about-contact-item > span{
+                text-align: left;
+            }
+
+        .about-lang{
+            margin-top: 10%;
+            width: 100%;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .about-lang-title{
+                border: 2px solid #0975be;
+                border-radius: 50px;
+                width: 70%;
+
+                padding: 3%;
+            }
+
+            .about-lang-content{
+                margin-top: 6%;
+                text-align: left;                
+            }
+
+                .lang-content-list{
+                    list-style-type: disc;
+                }
+
+                    .lang-content-item{
+                        margin-bottom: 10%;
+                    }
+
+
+        .about-expertise{
+            margin-top: 5%;
+            width: 100%;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .about-expertise-title{
+                border: 2px solid #0975be;
+                border-radius: 50px;
+                width: 70%;
+
+                padding: 3%;
+            }
+
+            .about-expertise-content{
+                margin-top: 6%;
+                text-align: left;
+            }
+
+                .expertise-content-list{
+                    list-style-type: disc;
+                }
+
+                .expertise-content-item{
+                    margin-bottom: 10%;
+                }
 
 .grid-item-i {
     background-color: white;
@@ -163,4 +278,50 @@ body {
 
     grid-row-start: 3;
     grid-row-end: 4;
+
+    max-width: 100%;
+    padding-left: 5%;
 }
+
+    .main{
+        text-align: left;
+        margin-top: 7%;
+        
+        width: 90%
+    }
+
+    .main-title{
+        color: white;
+        background-color: #043280;
+        border-radius: 20px;
+        padding: 2% 3%;
+        width: 45%;
+        text-align: center;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+    }
+
+    .experience{
+        width:100%;
+    }
+
+        .experience-content{
+            margin-top: 5%;
+            padding-left: 2%;
+        }
+
+        .experience-content-item-content{
+            margin-top: 3%;
+        }
+
+
+    .education{
+        margin-top: 7%;
+    }
+
+        .education-content{
+            margin-top: 5%;
+            padding-left: 2%;
+        }
+
+    
