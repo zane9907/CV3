@@ -1,3 +1,9 @@
+:root{
+    --title: #043280;
+    --title_alt: #0975be;
+}
+
+
 html,
 body {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -60,7 +66,7 @@ body {
 }
 
 .grid-item-d {
-    background-color: #043280;
+    background-color: var(--title);
 
     grid-column-start: 1;
     grid-column-end: 2;
@@ -70,7 +76,7 @@ body {
 }
 
 .grid-item-e {
-    background-color: #043280;
+    background-color: var(--title);
 
     grid-column-start: 2;
     grid-column-end: 3;
@@ -86,7 +92,7 @@ body {
         width: 250px;
         height: 250px;
         border-radius: 50%;
-        border: 5px solid #043280;
+        border: 5px solid var(--title);
 
         overflow:hidden;
     }
@@ -96,7 +102,7 @@ body {
 
 
 .grid-item-f {
-    background-color: #043280;
+    background-color: var(--title);
     padding: 20px;
 
     grid-column-start: 3;
@@ -116,7 +122,6 @@ body {
 
         text-transform: uppercase;
         font-weight: bold;
-        /* letter-spacing: 5px; */
 
         gap: 5%;
         font-size: 3.5em;
@@ -151,7 +156,6 @@ body {
 
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -200,7 +204,7 @@ body {
                 border-radius: 50%;
                 min-width: 30px;
                 min-height: 30px;
-                background-color: #0975be;
+                background-color: var(--title_alt);
             }
 
             .about-contact-item > span{
@@ -218,7 +222,7 @@ body {
         }
 
             .about-lang-title{
-                border: 2px solid #0975be;
+                border: 2px solid var(--title_alt);
                 border-radius: 50px;
                 width: 70%;
 
@@ -250,7 +254,7 @@ body {
         }
 
             .about-expertise-title{
-                border: 2px solid #0975be;
+                border: 2px solid var(--title_alt);
                 border-radius: 50px;
                 width: 70%;
 
@@ -292,7 +296,7 @@ body {
 
     .main-title{
         color: white;
-        background-color: #043280;
+        background-color: var(--title);
         border-radius: 20px;
         padding: 2% 3%;
         width: 45%;
